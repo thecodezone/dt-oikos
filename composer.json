@@ -1,0 +1,59 @@
+{
+  "name": "dt/oikos",
+  "description": "An oikos map for disciple.tools.",
+  "type": "project",
+  "license": "GNU",
+  "autoload": {
+    "psr-4": {
+      "DT\\Oikos\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Craig Wann",
+      "email": "craig@codezone.io"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-zip": "*",
+    "composer-plugin-api": "^1.0 || ^2.0"
+  },
+  "require-dev": {
+    "wpify/scoper": "^3.0",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "php-parallel-lint/php-parallel-lint": "^1.3.1",
+    "yoast/phpunit-polyfills": "^2.0",
+    "phpcompatibility/php-compatibility": "^9.0",
+    "yoast/phpunit-polyfills": "^1.0",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpunit/phpunit": "^9"
+  },
+  "extra": {
+    "wpify-scoper": {
+      "prefix": "DT\\Oikos",
+      "folder": "vendor-scoped",
+      "globals": [
+        "wordpress"
+      ],
+      "composerjson": "composer.scoped.json",
+      "composerlock": "composer.scoped.lock",
+      "autorun": true
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "bamarni/composer-bin-plugin": true,
+      "wpify/scoper": true
+    }
+  }
+}
