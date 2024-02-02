@@ -63,7 +63,6 @@ already well-versed in Laravel and Symfony frameworks.
 1. Run `composer install` to install PHP dependencies.
 1. Run `npm install` to install JS dependencies.
 1. Run `npm run dev` to compile assets for development.
-1. Commit and push your changes a new GitHub repository.
 1. Open the WordPress admin and activate your plugin.
 
 #### Scoped Dependency Autoloading
