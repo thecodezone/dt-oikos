@@ -60,15 +60,6 @@ already well-versed in Laravel and Symfony frameworks.
 
 ### Getting Started
 
-1. Clone this repository.
-1. Remove the .git folder and initialize a new git repository.
-1. Edit the `.rename.sh` updating each variable to match your plugin.
-1. Run `./.rename.sh`
-1. Edit `composer.json` to update the `name`, `description`, and `author` fields.
-1. Replace the `DT//Plugin` namespace with your namespace in the `composer.json` `autoload` and `extra.wpify-scoper`
-   sections.
-1. Edit `package.json` to update the `name` and `description` fields.
-1. Edit `version-control.json` with your plugin information.
 1. Run `composer install` to install PHP dependencies.
 1. Run `npm install` to install JS dependencies.
 1. Run `npm run dev` to compile assets for development.
